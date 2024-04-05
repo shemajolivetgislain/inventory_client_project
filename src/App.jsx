@@ -1,8 +1,12 @@
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-red-700 font-semibold">App container</h1>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
