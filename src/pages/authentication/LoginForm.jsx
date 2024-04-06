@@ -2,8 +2,10 @@ import { Controller, useForm } from "react-hook-form";
 import { CiUser, CiLock } from "react-icons/ci";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const {
     control,
     handleSubmit,
@@ -12,6 +14,7 @@ const LoginForm = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    navigate("/dashboard");
   };
   return (
     <div className="w-[57%] z-[1000] bg-white rounded-lg  px-10 py-16">
