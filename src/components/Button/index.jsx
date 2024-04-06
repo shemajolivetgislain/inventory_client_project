@@ -10,7 +10,7 @@ const Button = forwardRef(
           ref={ref}
           type={type || "submit"}
           onClick={onClick}
-          className={`${className} bg-whiteTheme-primaryColor text-whiteTheme-secondColor w-fit flex items-center rounded-md px-14 max-md:px-8 py-3 max-md:py-2 font-medium hover:bg-green-900 `}
+          className={`${className} bg-whiteTheme-primaryColor text-whiteTheme-secondColor w-fit flex items-center rounded-md px-14 max-md:px-8 py-3 max-md:py-2 font-medium hover:bg-yellow-600 `}
         >
           {value}
         </button>
