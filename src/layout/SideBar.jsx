@@ -7,7 +7,7 @@ const SideBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   return (
-    <aside className="w-[20%] max-w-[20%] py-6 px-8 flex flex-col gap-5 z-[9999] bg-whiteTheme-textColor text-whiteTheme-secondColor min-h-screen h-screen sticky">
+    <aside className="w-[20%] max-md:hidden max-w-[20%] py-6 px-8 flex flex-col gap-5 z-[9999] bg-whiteTheme-textColor text-whiteTheme-secondColor min-h-screen h-screen sticky">
       <header>
         <h1 className="font-bold text-2xl">
           Skol <span className="text-whiteTheme-primaryColor">Logo</span>
@@ -20,7 +20,7 @@ const SideBar = () => {
               key={index}
               className={`${
                 pathname === links.path &&
-                "p-3 bg-whiteTheme-primaryColor rounded-md"
+                "p-3 bg-whiteTheme-primaryColor rounded-md hover:text-whiteTheme-secondColor"
               } hover:text-whiteTheme-primaryColor`}
             >
               <Link to={links.path} className="flex items-center gap-4">
@@ -41,7 +41,7 @@ const SideBar = () => {
           <IoLogOutOutline size={22} />
           <p>Logout</p>
         </span>
-        <hr  className="border-slate-400"/>
+        <hr className="border-slate-400" />
         <p className="text-sm pt-2 text-slate-300">Powered by Skol Rwanda</p>
       </footer>
     </aside>
