@@ -1,10 +1,12 @@
+import ContainerHolder from "../../components/ContainerHolder";
+
 const HomeDashboard = () => {
   return (
-    <section className="bg-yellow-50 h-[89vh]">
+    <ContainerHolder>
       <div>
         <h1>Home</h1>
       </div>
-    </section>
+    </ContainerHolder>
   );
 };
 

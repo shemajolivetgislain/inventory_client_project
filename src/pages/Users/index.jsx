@@ -1,8 +1,12 @@
+import ContainerHolder from "../../components/ContainerHolder";
+
 const Users = () => {
   return (
-    <section>
-      <h1>Users pages</h1>
-    </section>
+    <ContainerHolder>
+      <div>
+        <h1>User Page</h1>
+      </div>
+    </ContainerHolder>
   );
 };
 
