@@ -4,7 +4,8 @@ import DashboardLayout from "../layout";
 import HomeDashboard from "../pages/Dashboard";
 import Users from "../pages/Users";
 import NotFound from "../pages/NotFound";
-NotFound;
+import DistributionPage from "../pages/Distributions";
+import InventoryPage from "../pages/Inventory";
 
 const Approutes = () => {
   return (
@@ -13,6 +14,8 @@ const Approutes = () => {
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={<HomeDashboard />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/distributions" element={<DistributionPage />} />
+        <Route path="/inventory" element={<InventoryPage />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
