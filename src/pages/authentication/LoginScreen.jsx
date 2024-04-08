@@ -22,7 +22,7 @@ const LoginScreen = () => {
           <div className="flex flex-col gap-10 z-[1000]">
             <span>
               <h1 className="font-bold text-3xl text-whiteTheme-secondColor">
-                Skol Logo
+                NextIn Logo
               </h1>
             </span>
           </div>

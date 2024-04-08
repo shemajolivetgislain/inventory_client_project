@@ -10,7 +10,7 @@ const SideBar = () => {
     <aside className="w-[20%] max-md:hidden max-w-[20%] py-6 px-8 flex flex-col gap-5 z-[9999] bg-whiteTheme-textColor text-whiteTheme-secondColor min-h-screen h-screen sticky">
       <header>
         <h1 className="font-bold text-2xl">
-          Skol <span className="text-whiteTheme-primaryColor">Logo</span>
+          NextIn <span className="text-whiteTheme-primaryColor">Logo</span>
         </h1>
       </header>
       <main className="mt-10 relative h-full">
@@ -42,7 +42,7 @@ const SideBar = () => {
           <p>Logout</p>
         </span>
         <hr className="border-slate-400" />
-        <p className="text-sm pt-2 text-slate-300">Powered by Skol Rwanda</p>
+        <p className="text-sm pt-2 text-slate-300">Powered by NextIn Rwanda</p>
       </footer>
     </aside>
   );
